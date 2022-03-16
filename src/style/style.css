@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #666;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+}
+
+.box {
+    height: 80px;
+    width: 80px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(226, 224, 68);
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+}
+
+.box.over {
+    border: 3px dotted #666;
+}
+
+.repositorio {
+    height: 300px;
+    width: 100px;
+    
+}
+
+
+
