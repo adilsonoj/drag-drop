@@ -1,3 +1,11 @@
+function play(){
+    document.querySelector(".glass .beer").style.animationPlayState = "running";
+    document.querySelector(".glass .head").style.animationPlayState = "running";
+    document.querySelector(".glass .surface").style.animationPlayState = "running";
+    document.querySelector(".glass .pour").style.animationPlayState = "running";
+    document.querySelector(".glass .pour .stream").style.animationPlayState = "running";
+  }
+
 let contadorA = 0;
 document.addEventListener('DOMContentLoaded', (event) => {
     function handleDragStart(e) {

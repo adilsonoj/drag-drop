@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    margin: 20px;
+  
 }
 
 .box-container {
@@ -27,6 +29,39 @@
 
 .box.over {
     border: 3px dotted #666;
+}
+
+
+
+@keyframes wave {
+    0% { 
+      left: -80px; 
+    }
+    100% { 
+      left: 0; 
+    }
+  }
+  
+  .wave-container {
+    width: 100px;
+    overflow: hidden;
+  }
+ 
+  .wave-container svg {
+    position: relative;
+    left: -50px;
+    width: 200px;
+    animation: wave 2s linear infinite;
+  }
+
+.glass-container {
+    background: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
 }
 
 .repositorio {
